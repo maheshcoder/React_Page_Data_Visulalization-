@@ -1,0 +1,120 @@
+.layout-container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.left-half {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px; /* Add some padding */
+  width: 60vw;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.small-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space evenly between the boxes */
+  max-width: 100%; /* Full width on smaller screens */
+}
+
+.box {
+  width: 5cm;
+  height:5cm; /* Calculate the width for 3 boxes in a row with gap */
+  text-align:top;
+  padding: 10px;
+  border: 8px solid rgb(178, 177, 177);
+  border-radius: 10px;
+  background-color: rgb(175, 75, 75);
+  margin-bottom: 20px; /* Add some margin to separate rows */
+  margin-top:20px ;
+}
+
+.right-half {
+  text-align: left;
+  /* width: 100%; */
+  flex: 1; /* Take the remaining space on the right side */
+  padding: 20px; /* Add some padding */
+}
+
+.textarea {
+  width: 69%;
+  height: 68vh; /* Set a percentage of the viewport height */
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #8587a8fe;
+  color: aliceblue;
+  font-weight: 700;
+  /* margin: auto; */
+  background-image: url("C:\Users\x\Desktop\Aug_work\Aug_Task-Work\frontend\Database-L0g0.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: 10px 40px;
+
+}
+.textarea{
+  padding-left: 0px;
+  background-color:  #6789BB;
+  padding-left: 80px;
+  padding-top: 10px;
+  
+}
+
+ .para{
+  
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:white;
+  font-size: 13px;
+  justify-content: left;
+  margin-left: -50px;
+  width:110% ;
+  padding-right: 100px;
+}
+.textarea.text{
+height:50%;
+
+}
+
+.header {
+  background-color: #c0a1d5;
+  padding: 10px;
+  text-align: center;
+}
+
+.chart-container {
+  margin-top: 10px;
+}
+.statistic{
+  background-color: transparent;
+  padding: 0;
+  z-index: -1;
+}
+
+/* Add a media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .layout-container {
+    align-items: center;
+    flex-direction: column; /* Stack content vertically on small screens */
+  }
+
+  .left-half,
+  .right-half {
+    max-width: 100%; /* Full width on small screens */
+  }
+  .box{
+    width: 100vw;
+    text-align: center;
+  }
+  .chart{
+    /* width: 100vw; */
+    margin-left:auto ;
+    text-align: center;
+  }
+}
